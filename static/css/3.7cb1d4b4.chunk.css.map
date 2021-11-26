@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/pages/styles.module.css"],"names":[],"mappings":"AAAA,oBACE,SACF,CACA,qBACE,YAAa,CACb,qBAAsB,CACtB,kBACF","file":"3.7cb1d4b4.chunk.css","sourcesContent":[".form {\n  width: 320;\n}\n.label {\n  display: flex;\n  flex-direction: column;\n  margin-bottom: 15px;\n}\n"]}
