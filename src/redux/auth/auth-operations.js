@@ -18,7 +18,9 @@ export const logIn = createAsyncThunk('auth/login', async (credentials,  { rejec
     token.set(data.token);
     return data;
   } catch (err) {
-    return rejectWithValue(err.message);
+    rejectWithValue(err.message);
+    alert('Wrong email or password');
+    return;
   }
 });
 
@@ -37,6 +39,7 @@ export const register = createAsyncThunk('auth/register', async (credentials,  {
     token.set(data.token);
     return data;
   } catch (err) {
+    alert('Something went wrong');
     return rejectWithValue(err.message);
   }
 });

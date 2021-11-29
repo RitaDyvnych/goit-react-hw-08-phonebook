@@ -28,25 +28,31 @@ export default function LogInPage() {
 
   return (
     <div>
-      <h1>LogIn Page</h1>
+      <h1 className={s.title}>Login Page</h1>
 
-      <form onSubmit={handleSubmit} style={s.form} autoComplete="off">
-        <label style={s.label}>
+      <form onSubmit={handleSubmit} className={s.form} autoComplete="off">
+        <label className={s.label}>
           Email
           <input
+            className={s.input}
             type="email"
             name="email"
             value={email}
+            pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+            title="Invalid email address"
             onChange={handleChange}
           />
         </label>
 
-        <label style={s.label}>
+        <label className={s.label}>
           Password
           <input
+            className={s.input}
             type="password"
             name="password"
             value={password}
+            pattern=".{8,}"
+            title="Must contain at least 7 or more characters"
             onChange={handleChange}
           />
         </label>

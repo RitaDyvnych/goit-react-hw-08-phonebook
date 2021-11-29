@@ -8,7 +8,6 @@ export default function Contacts() {
     <>
         <h1 className={s.title}>Phonebook</h1>
         <Form />
-        <h2 className={s.title}>Contacts</h2>
         <Filter />
         <ContactList />
       </>

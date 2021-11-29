@@ -12,7 +12,6 @@ export default function NavBar() {
       >
         Contacts
       </NavLink>
-      <button type='button' className={s.btn}>Log out</button>
     </nav>
   );
 }
