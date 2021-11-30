@@ -23,7 +23,10 @@ export default function ContactList() {
               type="button"
               className={style.btnDelete}
               id={el.id}
-              onClick={()=>dispatch(deleteThunkData(el.id))}
+            onClick={() => {
+              dispatch(deleteThunkData(el.id));
+              dispatch(getThunkData());
+            }}
             >
               Delete
             </button>

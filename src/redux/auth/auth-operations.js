@@ -51,7 +51,7 @@ export const currentUser = createAsyncThunk(
     const persistedToken = state.auth.token;
 
     if (persistedToken === null) {
-      console.log('No token');
+      // console.log('No token');
       return thunkAPI.rejectWithValue();
     }
 
